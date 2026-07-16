@@ -1,5 +1,24 @@
 # Gulag
 
+## Integrantes del Grupo
+- Leandro Zelaya
+
+## Descripción Corta del Videojuego
+Gulag es un videojuego 2D top-down de carácter competitivo y multijugador, desarrollado como proyecto final de la materia.
+
+## Tecnologías Principales
+- **Framework:** LibGDX
+- **Lenguaje:** Java
+- **Plataformas objetivo:** PC
+
+## Enlace a la Wiki del Proyecto
+[Ver la Propuesta Completa del Proyecto acá](https://github.com/LeandroZelaya/Gulag/wiki/Propuesta-del-Proyecto-%E2%80%90-Gulag)
+
+## Estado Actual del Proyecto
+Configuración inicial y estructura del proyecto.
+
+---
+
 A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
 This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
