@@ -1,52 +1,61 @@
 # Gulag
 
-## Integrantes del Grupo
+## Integrante
+
 - Leandro Zelaya
 
-## Descripción Corta del Videojuego
-Gulag es un videojuego 2D top-down de carácter competitivo y multijugador, desarrollado como proyecto final de la materia.
+## Descripción del Proyecto
 
-## Tecnologías Principales
-- **Framework:** LibGDX
-- **Lenguaje:** Java
-- **Plataformas objetivo:** PC
+Gulag es un videojuego de acción y combate 2D con perspectiva top-down inspirado en el estilo de juego de Hotline Miami.
+Dos jugadores conectados mediante una red se enfrentarán en combates 1 vs 1 dentro de escenarios cerrados ambientados en instalaciones soviéticas deterioradas. 
+Cada ronda comienza con ambos jugadores desarmados y deberán disputar las armas que aparecerán progresivamente en el mapa para obtener ventaja sobre su oponente.
+El objetivo es reducir la barra de vida del rival a cero para ganar rondas. La partida se desarrolla al mejor de cinco rondas, resultando ganador el primer jugador que consiga tres victorias.
+El proyecto utilizará una arquitectura cliente-servidor. Un servidor central coordinará el estado de la partida y sincronizará las acciones de los dos clientes conectados en tiempo real.
 
-## Enlace a la Wiki del Proyecto
-[Ver la Propuesta Completa del Proyecto acá](https://github.com/LeandroZelaya/Gulag/wiki/Propuesta-del-Proyecto-%E2%80%90-Gulag)
+## Tecnologías Utilizadas
 
-## Estado Actual del Proyecto
-Configuración inicial y estructura del proyecto.
+- Java 21 LTS
+- LibGDX 1.14.2
+- LWJGL3 (plataforma de escritorio)
+- Gradle
+- Sockets TCP y UDP para la comunicación en red
 
----
+## Wiki del Proyecto
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+La documentación completa puede consultarse en la Wiki del repositorio:
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+https://github.com/LeandroZelaya/Gulag/wiki
 
-## Platforms
+## Estado Actual
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+El proyecto se encuentra en etapa de configuración inicial y planificación del desarrollo.
 
-## Gradle
+## Cómo compilar y ejecutar
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+### Requisitos
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+- JDK 21
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/LeandroZelaya/Gulag.git
+```
+
+### Ingresar a la carpeta del proyecto
+
+```bash
+cd Gulag
+```
+
+### Ejecutar en Windows
+
+```bash
+gradlew.bat lwjgl3:run
+```
+
+### Ejecutar en Linux/macOS
+
+```bash
+./gradlew lwjgl3:run
+```
