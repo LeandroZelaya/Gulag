@@ -3,6 +3,7 @@ package com.zelaya.gulag.lwjgl3;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.zelaya.gulag.Main;
+import com.zelaya.gulag.utiles.Config;
 
 /** Launches the desktop (LWJGL3) application. */
 public class Lwjgl3Launcher {
