@@ -10,11 +10,21 @@ public class Main extends Game {
     @Override
     public void create() {
         Render.batch = new SpriteBatch();
+
         setScreen(new PantallaMenu(this));
     }
 
     @Override
+    public void render() {
+        super.render();
+    }
+
+    @Override
     public void dispose() {
-        Render.batch.dispose();
+        super.dispose();
+
+        if (Render.batch != null) {
+            Render.batch.dispose();
+        }
     }
 }

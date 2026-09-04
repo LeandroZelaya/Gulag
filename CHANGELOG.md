@@ -28,3 +28,13 @@
 - Implementación base de `PantallaJuego` con cámara y viewport configurados.
 - Implementación de `Main` con inicialización del `SpriteBatch` y carga de la pantalla inicial.
 - Assets agregados: imagen de fondo del menú y fuente personalizada.
+
+## [0.4.0] - 2026-09-04
+
+### Agregado
+- Centralización del procesamiento de entradas de teclado y mouse mediante la clase `GestorEntradas` (`InputAdapter`).
+- Implementación de la interfaz de usuario (`HUD`) utilizando `Scene2D` (`Stage` y `Label`) para visualizar las barras de vida en tiempo real.
+- Mecánica central de combate y sistema de daño contra un rival de prueba (dummy), incluyendo detección de colisiones por `Rectangle` y control de *cooldown* de ataque.
+- Lógica de cambio de estado de juego: transición automática de vuelta al menú principal (`PantallaMenu`) al agotarse la vida del rival.
+- Integración temporal de `ShapeRenderer` para la visualización visual del hitbox del rival de prueba durante las pruebas de desarrollo.
+- Actualización de la documentación y el estado actual del prototipo en el archivo `README.md`.
