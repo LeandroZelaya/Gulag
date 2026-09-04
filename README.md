@@ -63,3 +63,8 @@ gradlew.bat lwjgl3:run
 ```bash
 ./gradlew lwjgl3:run
 ```
+## Video de Demostración
+
+Podés ver el funcionamiento del prototipo en el siguiente enlace:
+
+- [Ver Video de Demostración (Drive)](https://drive.google.com/file/d/1n4fdg5RR-ZC4Kg_2TeZgSqFQRGVeo_h6/view?usp=sharing)
